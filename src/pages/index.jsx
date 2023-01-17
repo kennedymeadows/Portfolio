@@ -224,7 +224,7 @@ export default function Home({ articles }) {
             Computer science student, developer, and former professional chef.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm Simon, a junior developer and former chef based in Los Angeles.
+            I`m Simon, a junior developer and former chef based in Los Angeles.
             I am currently attending University of Southern California where I
             am studying computer science.
           </p>
