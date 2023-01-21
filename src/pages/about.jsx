@@ -41,10 +41,10 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About - Spencer Sharp</title>
+        <title>About - Simon Lewis</title>
         <meta
           name="description"
-          content="I’m Spencer Sharp. I live in New York City, where I design the future."
+          content="I’m Simon Lewis. I live in Los Angeles where I study computer science"
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -61,43 +61,53 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Spencer Sharp. I live in New York City, where I design the
-              future.
+              I'm Simon Lewis. I live in Los Angeles where I study computer
+              science.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I’ve loved making things for as long as I can remember, and
-                wrote my first program when I was 6 years old, just two weeks
-                after my mom brought home the brand new Macintosh LC 550 that I
-                taught myself to type on.
+                My first passion was in the kitchen. I always loved bringing
+                people together to share a meal so naturally I became a chef. I
+                worked in some great restaurants over the years in London,
+                Paris, and Los Angeles. While I loved the pace and the
+                creativity of the kitchen, I found some of the most rewarding
+                parts of the job were designing systems to optimize the
+                production capabilities of the kitchen.
               </p>
               <p>
-                The only thing I loved more than computers as a kid was space.
-                When I was 8, I climbed the 40-foot oak tree at the back of our
-                yard while wearing my older sister’s motorcycle helmet, counted
-                down from three, and jumped — hoping the tree was tall enough
-                that with just a bit of momentum I’d be able to get to orbit.
+                In 2015 I partenered with two French entrpreneurs to open one of
+                the first barbecue restaurants in Paris. We were able to build a
+                great team and create a unique dining experience for our guests
+                and enjoyed rapid success and developed a loyal following in our
+                neighborhood of Pigalle. I learned a lot about what it is to be
+                a leader while working in this position and I am grateful not
+                just to my former partners and colleagues, but to the entire
+                city of Paris which I called home for nearly 8 years.
               </p>
               <p>
-                I spent the next few summers indoors working on a rocket design,
-                while I recovered from the multiple surgeries it took to fix my
-                badly broken legs. It took nine iterations, but when I was 15 I
-                sent my dad’s Blackberry into orbit and was able to transmit a
-                photo back down to our family computer from space.
+                In late 2019 I moved back to my hometown of Los Angeles with
+                aspirations of opening a restaurant to share the experience of
+                dining which is so special to me with my community.
+                Unfortunately, the Covid pandemic shuttered the restaurant
+                industry and I was left idle for the first time in my life. I
+                decided to take this opportunity to finally pursue my passion
+                for technology and began taking classes in computer science. I
+                was instantly hooked.
               </p>
               <p>
-                Today, I’m the founder of Planetaria, where we’re working on
-                civilian space suits and manned shuttle kits you can assemble at
-                home so that the next generation of kids really <em>can</em>{' '}
-                make it to orbit — from the comfort of their own backyards.
+                I found that I was able to apply the same principles of design
+                and creativity that I had learned in the kitchen to the world of
+                software development. I am now a full-time student at the
+                University of Southern California where I am studying computer
+                science and will be graduating with a B.S. and M.S. in the
+                Spring of 2025. In the meantime, I will be throwing myself into
+                the world of limitless possibility and learning everything I
+                can.
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="#" icon={TwitterIcon}>
-                Follow on Twitter
-              </SocialLink>
               <SocialLink href="#" icon={InstagramIcon} className="mt-4">
                 Follow on Instagram
               </SocialLink>
@@ -108,11 +118,11 @@ export default function About() {
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
-                href="mailto:spencer@planetaria.tech"
+                href="mailto:simonlew@usc.edu"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
-                spencer@planetaria.tech
+                simonlew@usc.edu
               </SocialLink>
             </ul>
           </div>
