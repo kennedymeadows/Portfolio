@@ -11,14 +11,21 @@ export const meta = {
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
+<Image
+  src="https://storage.googleapis.com/kniferoll_bucket-portfolio/sdStudio.jpg"
+  alt=""
+  width={1920}
+  height={1080}
+/>
+
 Group fitness studios create a difficult information ecosystem. For Alter Fitness Club, a unique solution was needed in order to deliver their modern approach to athletic conditioning.
 
 To make this possible, we needed to build an application that could blend many different solutions for a single purpose. We needed to build a platform that could handle the following:
 
 - A dynamic schedule that could be updated in real-time
-- A booking system that could handle multiple classes at once
-- A payment system that could handle multiple classes at once
-- A membership system that could handle multiple classes at once
+- Different class types with different layouts for the classes
+- User authentication and account management through Google, limited to the company's domain
+- Extremely large format videos streaming in the background of the application while classes are displayed
 
 ## Getting Started
 
@@ -26,9 +33,65 @@ Ruby on Rails is a web application framework that includes everything needed to 
 
 We decided to build this application in Ruby on Rails because it was the quickest and easiest way for a one man operation to build the entire solution from scratch.
 
+Some of the other tools that made their way into the application were:
+
+- Electron - A framework for building cross-platform desktop applications with JavaScript, HTML, and CSS
+- Postgres - A powerful, open source object-relational database system which serves as the backbone of the application
+- Nvidia Mosaic - A tool for streaming multiple video feeds into a single video stream
+- A custom local server
+
 <Image
-  src="https://storage.googleapis.com/kniferoll_bucket-portfolio/Screenshot%202023-01-09%20at%207.47.37%20AM.png"
+  src="https://storage.googleapis.com/kniferoll_bucket-portfolio/fitnessStudio.jpg"
   alt=""
   width={1920}
   height={1080}
 />
+
+## The Schema
+
+The schema for this application was fairly simple. We needed to store the following information:
+
+- Users
+- Classes
+- Class Types
+- Workouts
+- Workout Blocks
+- Videos
+
+I was fairly new to group fitness classes when I began tackling this project.
+The way it works is at each gym they will have a fairly structured class type, such as HIIT or Strength Training.
+During each class there are fairly regimented blocks of time, such as a ten minute window, when the instructors will lead participants through a series of exercises.
+
+If I am Mr. Instructor on Monday teaching HIIT, I may decide that I want to focus on agility today, so I will want to communicate to participants that we will be doing back-and-forth sprints,
+followed by mountain climbers, and then a series of burpees. I will also want to communicate to participants that we will be doing this for 10 minutes, and then we will be moving on to the next block.
+
+It's important that the information is displayed in a way that is easy to follow and understand. In some of these workout blocks, the number of exercises can be upwards of 6, each quite complicated, and participants will be switching between them in rapid succession.
+
+<Image
+  src="https://storage.googleapis.com/kniferoll_bucket-portfolio/workout.jpg"
+  alt=""
+  width={1920}
+  height={1080}
+/>
+
+## The Application
+
+As I mentioned above, the application was built in ruby on rails. This meant that tasks such as generating database schemas, creating models, and building out the controllers
+were all handled by the framework.
+
+I utilized bootstrap as a framework for building the views, and I used the hotwire utilities to handle the dynamic content. The hotwire utilities are a set of tools that allow you to
+build dynamic web applications without the need for javascript. This is a huge benefit because it allows you to build dynamic applications without the need for a javascript framework.
+
+<Image
+  src="https://storage.googleapis.com/kniferoll_bucket-portfolio/Screenshot%202023-01-09%20at%207.48.31%20AM.png"
+  alt=""
+  width={1920}
+  height={1080}
+/>
+
+As this was an internal application, newer libraries focused on building beautiful user interfaces were not a priority. I wanted to build something that was easy to use, and easy to
+maintain. I opted to use bootstrap because it is a well known and well documented framework that is easy to use.
+
+The application was built with a mobile first approach. This meant that the application was designed to be used on mobile devices first, and then scaled up to larger screens. I figured
+that for many group fitness instructors, they would be rushing from one studio to another and may need to quickly made modifications or design a class on the fly. Having a mobile first
+application made that possible.
