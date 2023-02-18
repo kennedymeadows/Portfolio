@@ -217,7 +217,7 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>Simon Lewis - Software designer, student, and former chef</title>
+        <title>Simon Lewis - Software designer, student, former chef</title>
         <meta
           name="description"
           content="I'm Simon, a junior developer and former chef based in Los Angeles. I am currently attending University of Southern California where I am studying computer science."
