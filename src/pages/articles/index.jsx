@@ -38,7 +38,7 @@ export default function ArticlesIndex({ articles }) {
   return (
     <>
       <Head>
-        <title>Articles - Spencer Sharp</title>
+        <title>Articles - Simon Lewis</title>
         <meta
           name="description"
           content="All of my long-form thoughts on programming, the life of a chef, cooking, and more, collected in chronological order."
